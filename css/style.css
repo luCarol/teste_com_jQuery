@@ -5,7 +5,7 @@
 
 .navigation {
     position: absolute;
-    top: 4.6%;
+    top:4.6%;
     width: 100%;
     z-index: 2;
 }
@@ -29,7 +29,7 @@
 }
 
 .main-navigation .main-navigation-ul {
-    position: absolute;
+   position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -40,7 +40,7 @@
 }
 
 .main-navigation .main-navigation-ul li {
-    margin-bottom: 20px;
+    margin-bottom: 20px;;
     list-style: none;
 }
 
@@ -50,13 +50,37 @@
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
-    transition: 1s; 
+    transition: 0.3s ease; 
 }
 
-.main-navigation .main-navigation-ul a :hover {
+.main-navigation .main-navigation-ul a:hover {
     color: #777;
 }
 
-.bar1, .bar2, .bar3 {
+.burguer-container {
+    cursor: pointer;
+    z-index: 3;
+}
 
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: burlywood;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: rotate(-20deg) translate(-6pc, 6px);
+    background-color: burlywood;
+}
+
+.change .bar2 {
+    opacity: 0;
+    background-color: burlywood;
+}
+
+.change .bar3 {
+    transform: rotate(20deg) translate(-6pc, -7px);
+    background-color: burlywood;
 }
